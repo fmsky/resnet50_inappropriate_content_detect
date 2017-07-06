@@ -30,14 +30,14 @@ wrong_normal = []
 wrong_porn = []
 
 for i, n in enumerate(test_generator.filenames):
-    if n.startswith("normal") and result[i][0] <= 0.5:
+    if n.startswith("normal") and result[i][0] <= 0.8:
         correct_normal += 1
-    elif n.startswith("porn") and result[i][0] > 0.5:
+    elif n.startswith("porn") and result[i][0] > 0.8:
         correct_porn += 1
-    elif n.startswith("normal") and result[i][0] > 0.5:
+    elif n.startswith("normal") and result[i][0] > 0.8:
     	wrong_normal.append(result[i][0])
         shutil.copyfile('./test/normal/'+n[6:], './misclasify_test/normal/'+str(result[i][0])+'.jpg')
-    elif n.startswith("porn") and result[i][0] <= 0.5:
+    elif n.startswith("porn") and result[i][0] <= 0.8:
         wrong_porn.append(result[i][0])
         shutil.copyfile('./test/porn/'+n[4:], './misclasify_test/porn/'+str(result[i][0])+'.jpg')
 print('correct normal: ', correct_normal, ' correct porn: ', correct_porn, ' total: ', nb_samples)

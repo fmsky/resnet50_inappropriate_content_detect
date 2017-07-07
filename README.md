@@ -1,5 +1,5 @@
 # resnet50_nsfw
-Fine-tuned resnet50 model on Keras to detect images content such as: adult, violence, cartoon, medical and spoof
+Fine-tuned resnet50 model in Keras to detect images content such as: adult, violence, cartoon, medical and spoof
 
 ## Prerequisite:
 Keras
@@ -15,6 +15,7 @@ Linux machine with GPU
 
 ## Training:
 run resnet50_train.py
+
 Description: Use pretrained model [ResNet50](https://keras.io/applications/#resnet50 "ResNet50") in
 Keras. It has weights pretrained on ImageNet. Then replace the top layer. To fine-tune this model, only train the top layer and
 set the rest layers to be untrainable. Because I only use no more than 30000 images to train each model, I utilize data augmentation

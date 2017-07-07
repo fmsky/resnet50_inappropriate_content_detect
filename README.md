@@ -3,6 +3,7 @@ Fine-tuned resnet50 model in Keras to detect images content such as: adult, viol
 
 ## Prerequisite:
 Keras
+
 Linux machine with GPU
 
 ## Dataset:
@@ -16,10 +17,7 @@ Linux machine with GPU
 ## Training:
 run resnet50_train.py
 
-Description: Use pretrained model [ResNet50](https://keras.io/applications/#resnet50 "ResNet50") in
-Keras. It has weights pretrained on ImageNet. Then replace the top layer. To fine-tune this model, only train the top layer and
-set the rest layers to be untrainable. Because I only use no more than 30000 images to train each model, I utilize data augmentation
-in ImageDataGenerator. For the optimizer I use Adam.
+Description: Use pretrained model [ResNet50](https://keras.io/applications/#resnet50 "ResNet50") in Keras. It has weights pretrained on ImageNet. Then replace the top layer. To fine-tune this model, only train the top layer and set the rest layers to be untrainable. Because I only use no more than 30000 images to train each model, I utilize data augmentation in ImageDataGenerator. For the optimizer I use Adam.
 
 ## Result:
 For adult content detect model it achieves 93% accuracy on test set.

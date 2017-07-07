@@ -1,4 +1,4 @@
-# resnet50_nsfw
+# resnet50_inappropriate_content_detect
 Fine-tuned resnet50 model in Keras to detect images content such as: adult, violence, cartoon, medical and spoof
 
 ## Prerequisite:

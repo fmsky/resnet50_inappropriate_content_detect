@@ -22,7 +22,11 @@ in ImageDataGenerator. For the optimizer I use Adam.
 
 ## Result:
 For adult content detect model it achieves 93% accuracy on test set.
+
 For violence content detect model it achieves 96.7% accuracy on test set.
-Cartoon model: ongoing
-Medical model: ongoing
-Spoof model: ongoing
+
+Cartoon model: ongoing.
+
+Medical model: ongoing.
+
+Spoof model: ongoing.

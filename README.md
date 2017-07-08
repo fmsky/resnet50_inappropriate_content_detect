@@ -1,16 +1,20 @@
 # resnet50_inappropriate_content_detect
 Fine-tuned resnet50 model in Keras to detect images content such as: adult, violence, cartoon, medical and spoof
 
-## Prerequisite:
-Keras
+## Configuration:
+Hardware: AWS EC2 p2.xlarge
 
-Linux machine with GPU
+OS: Linux/Unix, Amazon Linux 2016.09
+
+Software: Keras
 
 ## Dataset:
 1. dataset of adult image metadata in this repository: 
 [pornhub database](https://github.com/ZixuanLiang/hub-db "pornhub database")
+
 2. dataset of violence image metadata in google open images dataset (scrap images with label name "violence"): 
 [Google Open Images](https://github.com/openimages/dataset "Google Open Images")
+
 3. dataset of normal image metadata in NUS-WIDE dataset:
 [NUS-WIDE images urls](http://dl.nextcenter.org/public/nuswide/NUS-WIDE-urls.rar "NUS-WIDE images urls")
 
@@ -26,7 +30,7 @@ adult: 93%
 
 violence: 97%
 
-cartoon: ongoing.
+cartoon: 94%.
 
 medical: ongoing.
 

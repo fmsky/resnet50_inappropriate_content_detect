@@ -32,9 +32,7 @@ violence: 97%
 
 cartoon: 94%.
 
-medical: ongoing.
-
-spoof: ongoing.
+disgusting: ongoing.
 
 ## Improve:
 While the models achieve fairly good accuracy, they have potential for improvement. There are a few possible ways. 

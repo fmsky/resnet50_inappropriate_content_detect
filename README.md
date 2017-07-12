@@ -34,7 +34,7 @@ cartoon: 94%.
 
 disgusting: ongoing.
 
-## Improve:
+## Improve
 While the models achieve fairly good accuracy, they have potential for improvement. There are a few possible ways. 
 
 Collect more precisely labeled images. Because I only collected roughly 30000 images for each model (train, validation and test) from particular websites/open dataset/search engine and I didn't check the correctness of all samples, training data is inevitably somehow noisy. Collecting more images means more training time and manually checking tens of thousands of images by myself is impratical. 
@@ -46,3 +46,18 @@ Fine tune more convolutional layers in ResNet50 model rather than only the top l
 Add regularization (weight decay) to defeat overfitting. They allow to apply penalties on layer parameters or layer activity during optimization. 
 
 Adjust other arguments. For the optimizer I user Adam, which is considered one of the best adaptive learning rate methods by far with fast convergence. We can try other options such as SGD + Nesterov momentum. We can decay the learning rate along with training in the optimizer. Initial learning rate also affects the final performance. Ensemble independent models can also lead to better performance. 
+
+## Reference
+
+1. [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf "Deep Residual Learning for Image Recognition")
+
+2. [A public dataset for large-scale multi-label and multi-class image classification](https://github.com/openimages "A public dataset for large-scale multi-label and multi-class image classification")
+
+3. [NUS-WIDE: A Real-World Web Image Database from National University of Singapore](http://lms.comp.nus.edu.sg/research/CIVR2009.pdf "NUS-WIDE: A Real-World Web Image Database from National University of Singapore")
+
+4. [Dataset of Adult Image Metadata for ML and NLP and Whatever Else](https://github.com/cdipaolo/hub-db "Dataset of Adult Image Metadata for ML and NLP and Whatever Else")
+
+5. [Adam: A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf "Adam: A Method for Stochastic Optimization")
+
+6. [Must Know Tips/Tricks in Deep Neural Networks](http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html "Must Know Tips/Tricks in Deep Neural Networks")
+
